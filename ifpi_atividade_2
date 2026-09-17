@@ -1,0 +1,51 @@
+caractere = input()
+
+codigo_numerico = ord(caractere)
+
+print(codigo_numerico)
+
+
+
+preco_maca = float(input())
+preco_banana = float(input())
+
+total = (preco_maca * 3) + (preco_banana * 2)
+
+print(f"{total:.2f}")
+
+
+
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+n4 = int(input())
+n5 = int(input())
+
+numeros = [n1, n2, n3, n4, n5]
+
+maior = max(numeros)
+menor = min(numeros)
+media = sum(numeros) / 5
+
+print(maior)
+print(menor)
+print(media)
+
+
+
+idade_terrestre = int(input())
+
+idade_espacial = idade_terrestre // 2
+
+print(idade_espacial)
+
+
+
+celsius = float(input())
+
+fahrenheit = (celsius * 9 / 5) + 32
+
+if fahrenheit.is_integer():
+    print(int(fahrenheit))
+else:
+    print(fahrenheit)
