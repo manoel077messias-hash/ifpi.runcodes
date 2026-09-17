@@ -1,1 +1,52 @@
-ok
+frase = input()
+
+frase_limpa = frase.strip()
+
+print(len(frase_limpa))
+
+
+
+def main():
+
+    nome = input()
+
+    quantidade_caracteres = len(nome)
+
+    print(quantidade_caracteres)
+
+if __name__ == '__main__':
+    main()
+
+
+
+total_segundos = int(input())
+
+horas = total_segundos // 3600
+resto = total_segundos % 3600
+minutos = resto // 60
+segundos = resto % 60
+
+print(f"{horas:02d}:{minutos:02d}:{segundos:02d}")
+
+
+
+valor = float(input())
+
+valor_arredondado = round(valor)
+
+print(valor_arredondado)
+
+
+
+valor_compra = float(input())
+
+a_vista = valor_compra * (1 - 0.09)
+
+parcela_5x = valor_compra / 5
+
+total_com_juros = valor_compra * (1 + 0.17)
+parcela_10x = total_com_juros / 10
+
+print(f"{a_vista:.2f}")
+print(f"{parcela_5x:.2f}")
+print(f"{parcela_10x:.2f}")
